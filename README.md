@@ -12,5 +12,5 @@ Docker image for the PHYS 2XX series of labs used to power the [PrairieLearn wor
 - Use `docker pull` to pull down the image corresponding to the tag. For example:
 
 ```
-docker pull physicsillinois/phys-2xx:mg5_amc2.7.0-python3
+docker pull physicsillinois/phys-2xx:latest
 ```
