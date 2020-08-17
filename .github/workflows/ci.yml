@@ -18,7 +18,8 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         repository: physicsillinois/phys-2xx
-        dockerfile: Dockerfile
+        path: docker
+        dockerfile: docker/Dockerfile
         tags: test
         tag_with_sha: true
         tag_with_ref: true
