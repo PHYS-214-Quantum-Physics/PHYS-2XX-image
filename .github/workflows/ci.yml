@@ -30,4 +30,4 @@ jobs:
         docker run --rm
         --entrypoint /bin/bash
         physicsillinois/phys-2xx:test
-        "python -m pip list"
+        -c "python -m pip list"
