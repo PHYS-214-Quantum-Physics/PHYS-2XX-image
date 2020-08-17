@@ -21,6 +21,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: physicsillinois/phys-2xx
+        path: docker
         dockerfile: Dockerfile
         tags: latest,fall-2020
     - name: Build and Publish to Registry with Release Tag
@@ -30,6 +31,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: physicsillinois/phys-2xx
+        path: docker
         dockerfile: Dockerfile
         tags: latest,latest-stable,fall-2020
         tag_with_ref: true
