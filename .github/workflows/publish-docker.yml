@@ -22,7 +22,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: physicsillinois/phys-2xx
         path: docker
-        dockerfile: Dockerfile
+        dockerfile: docker/Dockerfile
         tags: latest,fall-2020
     - name: Build and Publish to Registry with Release Tag
       if: startsWith(github.ref, 'refs/tags/')
@@ -32,6 +32,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: physicsillinois/phys-2xx
         path: docker
-        dockerfile: Dockerfile
+        dockerfile: docker/Dockerfile
         tags: latest,latest-stable,fall-2020
         tag_with_ref: true

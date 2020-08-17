@@ -19,7 +19,7 @@ jobs:
       with:
         repository: physicsillinois/phys-2xx
         path: docker
-        dockerfile: Dockerfile
+        dockerfile: docker/Dockerfile
         tags: test
         tag_with_sha: true
         tag_with_ref: true
