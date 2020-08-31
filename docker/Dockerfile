@@ -33,12 +33,13 @@ RUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \
 # Import matplotlib the first time to build the font cache.
 ENV XDG_CACHE_HOME="/home/${NB_USER}/.cache/"
 
+# Allow for PrarieLearn to run workspaces locally
+ENV JUPYTER_RUNTIME_DIR /tmp/runtime
+ENV JUPYTER_ALLOW_INSECURE_WRITES true
+
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions "/home/${NB_USER}"
 
 WORKDIR ${HOME}
-
-ENV JUPYTER_RUNTIME_DIR /tmp/runtime
-ENV JUPYTER_ALLOW_INSECURE_WRITES true
 
 CMD ["start.sh", "jupyter", "lab"]
