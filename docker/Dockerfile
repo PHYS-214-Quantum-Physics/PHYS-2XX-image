@@ -28,7 +28,8 @@ RUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \
     jupyter lab build -y && \
     jupyter lab clean -y && \
     fix-permissions "${CONDA_DIR}" && \
-    fix-permissions "/home/${NB_USER}"
+    fix-permissions "/home/${NB_USER}" && \
+    fix-permissions "/home/${NB_USER}/.local"
 
 # Import matplotlib the first time to build the font cache.
 ENV XDG_CACHE_HOME="/home/${NB_USER}/.cache/"
