@@ -29,6 +29,7 @@ RUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \
     jupyter lab clean -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}" && \
+    mkdir -p "/home/${NB_USER}/.local" && \
     fix-permissions "/home/${NB_USER}/.local"
 
 # Import matplotlib the first time to build the font cache.
