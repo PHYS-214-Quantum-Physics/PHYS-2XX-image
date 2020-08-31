@@ -38,4 +38,7 @@ RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
 
 WORKDIR ${HOME}
 
+ENV JUPYTER_RUNTIME_DIR /tmp/runtime
+ENV JUPYTER_ALLOW_INSECURE_WRITES true
+
 CMD ["start.sh", "jupyter", "lab"]
