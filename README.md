@@ -2,7 +2,7 @@
 
 Docker image for the PHYS 2XX series of labs used to power the [PrairieLearn workspaces](https://prairielearn.readthedocs.io/en/latest/workspaces/).
 
-[![GitHub Actions Status: CI](https://github.com/PHYS-214-Quantum-Physics/PHYS-2XX-image/workflows/CI/badge.svg?branch=master)](https://github.com/PHYS-214-Quantum-Physics/PHYS-2XX-image/actions?query=workflow%3ACI+branch%3Amaster)
+[![Docker Images](https://github.com/PHYS-214-Quantum-Physics/PHYS-2XX-image/actions/workflows/docker.yml/badge.svg?branch=master)](https://github.com/PHYS-214-Quantum-Physics/PHYS-2XX-image/actions/workflows/docker.yml?query=branch%3Amaster)
 [![Docker Pulls](https://img.shields.io/docker/pulls/physicsillinois/phys-2xx)](https://hub.docker.com/r/physicsillinois/phys-2xx)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/physicsillinois/phys-2xx/latest)](https://hub.docker.com/r/physicsillinois/phys-2xx/tags?name=latest)
 
