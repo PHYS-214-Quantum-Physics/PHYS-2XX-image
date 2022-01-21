@@ -107,6 +107,7 @@ jobs:
           context: docker
           file: docker/Dockerfile
           tags: |
+            physicsillinois/phys-2xx:latest
             ghcr.io/${{ steps.prep.outputs.repo_name_lowercase }}:latest
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
