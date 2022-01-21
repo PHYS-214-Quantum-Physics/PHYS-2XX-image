@@ -12,7 +12,7 @@ RUN apt-get update && \
 USER ${NB_UID}
 
 COPY jupyter_notebook_config.py /etc/jupyter/
-COPY requirements.txt /requirements.txt
+COPY docker/requirements.txt /requirements.txt
 
 # Following https://github.com/jupyter/docker-stacks/blob/9b87b16254455fdff2eb7884a424eb19f5aba496/scipy-notebook/Dockerfile
 RUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \
