@@ -75,7 +75,7 @@ jobs:
         id: docker_build_test
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: docker
           file: docker/Dockerfile
           tags: ${{ steps.prep.outputs.tags }}
           labels: |
@@ -119,7 +119,7 @@ jobs:
         id: docker_build_release
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: docker
           file: docker/Dockerfile
           tags: |
             ghcr.io/${{ steps.prep.outputs.repo_name_lowercase }}:latest
